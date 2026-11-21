@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #2c3539;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.center {
+  text-align: center;
+  display: block;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #6c7a80;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+}

@@ -1,8 +1,13 @@
+import logoImg from '../../assets/images/logo.png'; 
+import './Footer.css';
+
 export function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="footer_logo">Book Store</div>
+        <div className="footer_logo">
+          <img src={logoImg} alt="Book Store Logo" />
+        </div>
         
         <div className="footer_grid">
           <div className="footer_col">
@@ -27,7 +32,7 @@ export function Footer() {
           
           <div className="footer_col">
             <h4>Send Us a Message</h4>
-            <span>Looking for a particular title, planing a book-club order, or interested in an upcoming event </span>
+            <span>Looking for a particular title, planing a <br /> book-club order, or interested in an <br />upcoming event </span>
           </div>
         </div>
       </div>
