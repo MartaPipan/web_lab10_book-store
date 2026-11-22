@@ -1,0 +1,75 @@
+.best-selling {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center; 
+  padding: 40px 20px 40px 20px;
+  max-width: 1100px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.best-selling .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.best-selling .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #7d878b;
+  margin-bottom: 14px;
+}
+
+.best-selling .title {
+  font-family: 'Georgia', serif;
+  font-size: 64px;
+  font-weight: normal;
+  line-height: 1.12;
+  color: #1a1f22;
+  margin: 0 0 22px 0;
+  max-width: 320px;
+}
+
+.best-selling .description {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.65;
+  color: #6c7a80;
+  margin: 0 0 28px 0;
+  max-width: 340px;
+}
+
+.best-selling .image-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.best-selling .image-box img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .best-selling {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 45px 20px;
+  }
+
+  .best-selling .image-box {
+    justify-content: center;
+  }
+
+  .best-selling .title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+}
