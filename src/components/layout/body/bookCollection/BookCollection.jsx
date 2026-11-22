@@ -1,8 +1,8 @@
-// import { Button } from '../../../buttons/Button';
-import { booksData } from '../../../../data/books.js';
-import './BookCollection.css';
+import {AddToCartButton} from "../../../buttons/AddToCartButton";
+import {booksData} from "../../../../data/books.js";
+import "./BookCollection.css";
 
-export function BookCollection({ onAddToCart }) {
+export function BookCollection({onAddToCart}) {
   return (
     <section className="collection">
       <div className="container">
@@ -15,17 +15,15 @@ export function BookCollection({ onAddToCart }) {
               <div className="book_card_image">
                 <img src={book.image} alt={book.title} />
               </div>
-              
+
               <h3 className="book_card_title">{book.title}</h3>
-              
+
               <div className="book_card_prices">
                 <span className="price_old">{book.price}</span>
                 <span className="price_new">{book.discounted}</span>
               </div>
 
-                {/*<Button variant="secondary" onClick={() => onAddToCart(book)}>
-                ADD TO CART
-              </Button>   */}
+              <AddToCartButton onClick={() => onAddToCart(book)} />
             </article>
           ))}
         </div>

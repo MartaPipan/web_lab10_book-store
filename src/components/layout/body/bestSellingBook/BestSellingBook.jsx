@@ -1,6 +1,6 @@
-// import { Button } from '../../buttons/Button';
-import twoBooks from '../../../../assets/images/two-new-books-wrappers-4.jpg';
-import './BestSellingBook.css';
+import {ViewMoreButton} from "../../../buttons/ViewMoreButton";
+import twoBooks from "../../../../assets/images/two-new-books-wrappers-4.jpg";
+import "./BestSellingBook.css";
 
 export function BestSellingBook() {
   return (
@@ -8,13 +8,9 @@ export function BestSellingBook() {
       <div className="content">
         <span className="subtitle">Over 4000 Amazon Reviews</span>
         <h1 className="title">Best selling book</h1>
-        <p className="description">
-          Our bookstore is a welcoming space for readers, writers, and curious minds.
-        </p>
+        <p className="description">Our bookstore is a welcoming space for readers, writers, and curious minds.</p>
 
-        {/* <Button variant="primary" onClick={() => console.log('View more')}>
-          VIEW MORE
-        </Button> */}
+        <ViewMoreButton onClick={() => console.log("View more")} />
       </div>
 
       <div className="image-box">

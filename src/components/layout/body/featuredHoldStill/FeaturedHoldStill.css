@@ -1,0 +1,116 @@
+.featured-sections {
+  background-color: #ffffff;
+  padding: 50px 0;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1050px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.featured--reverse .featured_text {
+  order: 2;
+}
+
+.featured--reverse .featured_image {
+  order: 1;
+}
+
+.featured_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.featured_title {
+  font-family: "Georgia", serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #1a1f22;
+  margin: 0 0 18px 0;
+}
+
+.featured_subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1f22;
+  margin: -10px 0 18px 0;
+}
+
+.featured_description {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #5c6970;
+  margin: 0 0 22px 0;
+}
+
+.featured_book_info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.featured_book_name {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  color: #1a1f22;
+}
+
+.featured_book_author {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #1a1f22;
+}
+
+.featured_meta p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #2c3539;
+  margin: 4px 0;
+}
+
+.featured_image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured_image img {
+  width: 100%;
+  max-width: 440px;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 850px) {
+  .featured {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .featured--reverse .featured_text {
+    order: 1;
+  }
+
+  .featured--reverse .featured_image {
+    order: 2;
+  }
+
+  .featured_title {
+    font-size: 30px;
+  }
+}

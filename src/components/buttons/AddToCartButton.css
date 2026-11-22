@@ -1,0 +1,28 @@
+.add-to-cart-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a8d4d8;
+  color: #2c3539;
+  border: none;
+  border-radius: 0;
+  padding: 10px 26px;
+  font-family:"Inter", BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  opacity: 0.9;
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}

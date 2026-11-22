@@ -1,9 +1,9 @@
 .header {
-  background-color: #67878a;
+  background-color: #7d9a9d;
   color: #ffffff;
   padding: 16px 0;
   width: 100%;
-  position: sticky; /* Шапка залишатиметься зверху при прокрутці */
+  position: sticky;
   top: 0;
   z-index: 100;
 }
@@ -51,25 +51,38 @@
 }
 
 .header_cart {
-  display: flex;
+  position: relative;
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
   cursor: pointer;
+  padding: 4px;
 }
 
 .header_cart img {
-  width: 18px;  
-  height: 18px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   filter: brightness(0) invert(1);
 }
 
 .header_cart-count {
-  font-size: 13px;
-  font-weight: 600;
+  position: absolute;
+  top: -3px;
+  right: -5px;
+  background-color: #4e7d8a;
   color: #ffffff;
+  font-size: 8px;
+  font-weight: 700;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
-
 
 @media (max-width: 600px) {
   .header_navigation {
@@ -78,7 +91,7 @@
   }
 
   .header_nav {
-    order: 3; 
+    order: 3;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;

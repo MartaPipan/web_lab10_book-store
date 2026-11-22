@@ -1,0 +1,29 @@
+.view-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #658285;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  padding: 13px 34px;
+  font-family: "Inter", BlinkMacSystemFont, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #b1e2ed;
+  transition:
+    transform 0.15s ease,
+    opacity 0.2s ease;
+}
+
+.view-more-btn:hover {
+  opacity: 0.9;
+}
+
+.view-more-btn:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}

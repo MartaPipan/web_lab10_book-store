@@ -1,5 +1,5 @@
 .collection {
-  background-color: #f4f7f8; /* Ніжний світло-сірий/блакитний фон секції */
+  background-color: #e6f5fa3c;
   padding: 70px 0;
   width: 100%;
 }
@@ -13,7 +13,7 @@
 .collection_subtitle {
   display: block;
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 13px;
   color: #2c3539;
   margin-bottom: 8px;
@@ -21,7 +21,7 @@
 
 .collection_title {
   text-align: center;
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 38px;
   font-weight: normal;
   color: #1a1f22;
@@ -31,7 +31,7 @@
 .collection_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 50px ;
+  gap: 50px;
   background-color: #ffffff;
   padding: 20px;
 }
@@ -45,7 +45,7 @@
 
 .book_card_image {
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   margin-bottom: 18px;
   overflow: hidden;
 }
@@ -58,7 +58,7 @@
 }
 
 .book_card_title {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 16px;
   font-weight: normal;
   color: #1a1f22;
@@ -71,7 +71,7 @@
   justify-content: center;
   gap: 8px;
   margin-bottom: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 12px;
 }
 
@@ -92,7 +92,6 @@
     padding: 30px;
   }
 }
-
 
 @media (max-width: 600px) {
   .collection {
