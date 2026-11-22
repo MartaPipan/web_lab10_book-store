@@ -69,3 +69,21 @@
   font-weight: 600;
   color: #ffffff;
 }
+
+
+@media (max-width: 600px) {
+  .header_navigation {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .header_nav {
+    order: 3; 
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}

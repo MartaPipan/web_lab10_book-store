@@ -1,0 +1,112 @@
+.collection {
+  background-color: #f4f7f8; /* Ніжний світло-сірий/блакитний фон секції */
+  padding: 70px 0;
+  width: 100%;
+}
+
+.collection .container {
+  max-width: 1050px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.collection_subtitle {
+  display: block;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #2c3539;
+  margin-bottom: 8px;
+}
+
+.collection_title {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 38px;
+  font-weight: normal;
+  color: #1a1f22;
+  margin: 0 0 40px 0;
+}
+
+.collection_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px ;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.book_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book_card_image {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  margin-bottom: 18px;
+  overflow: hidden;
+}
+
+.book_card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.book_card_title {
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #1a1f22;
+  margin: 0 0 8px 0;
+}
+
+.book_card_prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+}
+
+.price_old {
+  color: #6ebec5;
+  text-decoration: line-through;
+  font-size: 11px;
+}
+
+.price_new {
+  color: #0c5a61;
+  font-weight: 800;
+}
+
+@media (max-width: 850px) {
+  .collection_grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .collection {
+    padding: 40px 15px;
+  }
+
+  .collection_title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+
+  .collection_grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 24px 16px;
+  }
+}

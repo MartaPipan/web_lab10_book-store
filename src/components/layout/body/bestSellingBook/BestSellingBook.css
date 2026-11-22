@@ -73,3 +73,27 @@
     max-width: 100%;
   }
 }
+
+@media (max-width: 600px) {
+  .best-selling {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 35px 15px;
+    width: 100%;
+  }
+
+  .best-selling .title {
+    font-size: 36px;
+    max-width: 100%;
+  }
+
+  .best-selling .description {
+    max-width: 100%;
+  }
+
+  .best-selling .image-box {
+    justify-content: center;
+  }
+}
+
+
