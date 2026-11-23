@@ -1,0 +1,40 @@
+.page_section {
+  background-color: #e6f5fa3c;
+  padding: 100px 20px;
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page_subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #0c5a61;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.page_title {
+  font-family: "Georgia", serif;
+  font-size: 42px;
+  font-weight: normal;
+  color: #1a1f22;
+  margin: 0 0 24px 0;
+}
+
+.page_back_link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0c5a61;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.page_back_link:hover {
+  opacity: 0.75;
+}
