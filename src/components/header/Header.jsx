@@ -2,7 +2,7 @@ import logoImg from "../../assets/images/logo.png";
 import shopCart from "../../assets/images/shopping-cart.png";
 import "./Header.css";
 
-export function Header({cartCount = 0}) {
+export function Header({cartCount = 0, onOpenCart }) {
   return (
     <header className="header">
       <div className="container header_navigation">
@@ -31,7 +31,7 @@ export function Header({cartCount = 0}) {
           </a>
         </nav>
 
-        <div className="header_cart">
+        <div className="header_cart" onClick={onOpenCart}>
           <img src={shopCart} alt="shopping-cart" />
           <span className="header_cart-count">{cartCount}</span>
         </div>

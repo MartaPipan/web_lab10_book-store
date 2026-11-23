@@ -1,0 +1,147 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 31, 34, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-window {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  background-color: #7d9a9d;
+  color: #ffffff;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  font-family: "Georgia", serif;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.modal-empty {
+  text-align: center;
+  color: #6c7a80;
+  padding: 30px 0;
+  font-size: 14px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #eef2f3;
+}
+
+.cart-item_img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+}
+
+.cart-item_info {
+  flex: 1;
+  text-align: left;
+}
+
+.cart-item_info h4 {
+  font-family: "Georgia", serif;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 4px 0;
+  color: #1a1f22;
+}
+
+.cart-item_info span {
+  font-size: 13px;
+  color: #4f6d70;
+  font-weight: 600;
+}
+
+.cart-item_remove {
+  background: none;
+  border: none;
+  color: #b0bec5;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s;
+}
+
+.cart-item_remove:hover {
+  color: #d9534f;
+}
+
+.modal-footer {
+  padding: 18px 20px;
+  background-color: #f4f7f8;
+  border-top: 1px solid #e1e8ea;
+}
+
+.modal-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 14px;
+  color: #1a1f22;
+}
+
+.modal-checkout {
+  width: 100%;
+  background-color: #658285;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #b1e2ed;
+}
+
+.modal-checkout:hover {
+  opacity: 0.9;
+}
