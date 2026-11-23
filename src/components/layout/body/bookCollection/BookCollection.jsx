@@ -29,12 +29,7 @@ export function BookCollection({ onAddToCart }) {
                   <span className="price_new">{book.discounted}</span>
                 </div>
 
-                <AddToCartButton
-                  onClick={(e) => {
-                    e.preventDefault();
-                    onAddToCart(book);
-                  }}
-                />
+                <AddToCartButton onClick={() => onAddToCart(book)} />
               </article>
             </Link>
           ))}
