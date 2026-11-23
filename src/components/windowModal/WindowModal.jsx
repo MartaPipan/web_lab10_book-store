@@ -1,6 +1,22 @@
+import { useEffect } from "react";
 import "./WindowModal.css";
 
-export function WindowModal({isOpen, onClose, cartItems, onRemoveItem}) {
+export function WindowModal({ isOpen, onClose, cartItems, onRemoveItem }) {
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   const totalPrice = cartItems.reduce((sum, item) => {
@@ -30,7 +46,11 @@ export function WindowModal({isOpen, onClose, cartItems, onRemoveItem}) {
                     <h4>{book.title}</h4>
                     <span>{book.discounted}</span>
                   </div>
-                  <button className="cart-item_remove" onClick={() => onRemoveItem(index)} title="Remove book">
+                  <button
+                    className="cart-item_remove"
+                    onClick={() => onRemoveItem(index)}
+                    title="Remove book"
+                  >
                     ✕
                   </button>
                 </li>
@@ -45,7 +65,10 @@ export function WindowModal({isOpen, onClose, cartItems, onRemoveItem}) {
               <span>Total:</span>
               <strong>${totalPrice.toFixed(2)}</strong>
             </div>
-            <button className="modal-checkout" onClick={() => alert(`Order placed! Total: $${totalPrice.toFixed(2)}`)}>
+            <button
+              className="modal-checkout"
+              onClick={() => alert(`Order placed! Total: $${totalPrice.toFixed(2)}`)}
+            >
               CHECKOUT
             </button>
           </div>
