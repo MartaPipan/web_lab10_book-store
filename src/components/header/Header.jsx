@@ -1,34 +1,35 @@
+import { Link } from "react-router-dom";
 import logoImg from "../../assets/images/logo.png";
 import shopCart from "../../assets/images/shopping-cart.png";
 import "./Header.css";
 
-export function Header({cartCount = 0, onOpenCart }) {
+export function Header({ cartCount = 0, onOpenCart }) {
   return (
     <header className="header">
       <div className="container header_navigation">
-        <a href="#" className="header_logo">
+        <Link to="/" className="header_logo">
           <img src={logoImg} alt="Book Store Logo" />
-        </a>
+        </Link>
 
         <nav className="header_nav">
-          <a href="#" className="header_link">
+          <Link to="/" className="header_link">
             HOME
-          </a>
-          <a href="#" className="header_link">
+          </Link>
+          <Link to="/about" className="header_link">
             ABOUT
-          </a>
-          <a href="#footer" className="header_link">
+          </Link>
+          <Link to="/contact" className="header_link">
             CONTACT
-          </a>
-          <a href="#" className="header_link">
+          </Link>
+          <Link to="/page1" className="header_link">
             PAGE1
-          </a>
-          <a href="#" className="header_link">
+          </Link>
+          <Link to="/page2" className="header_link">
             PAGE2
-          </a>
-          <a href="#" className="header_link">
+          </Link>
+          <Link to="/store" className="header_link">
             STORE
-          </a>
+          </Link>
         </nav>
 
         <div className="header_cart" onClick={onOpenCart}>
