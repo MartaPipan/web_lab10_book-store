@@ -4,6 +4,11 @@ import "./BookCollection.css";
 import { Link } from "react-router-dom";
 
 export function BookCollection({ onAddToCart }) {
+    const handleBuyClick = (e, book) => {
+    e.preventDefault();    // забороняє <Link> переходити за адресою
+    e.stopPropagation(); // зупиняє передачу кліку вище до картки-посилання
+    onAddToCart(book);
+  };
   return (
     <section className="collection">
       <div className="container">
@@ -29,7 +34,7 @@ export function BookCollection({ onAddToCart }) {
                   <span className="price_new">{book.discounted}</span>
                 </div>
 
-                <AddToCartButton onClick={() => onAddToCart(book)} />
+                <AddToCartButton onClick={(e) => handleBuyClick(e, book)} />
               </article>
             </Link>
           ))}
