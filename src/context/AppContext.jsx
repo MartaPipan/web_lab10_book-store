@@ -26,6 +26,7 @@ export function AppProvider({ children }) {
     <AppContext.Provider
       value={{
         cart,
+        setCart,
         isCartOpen,
         setIsCartOpen,
         handleAddToCart,
